@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Assignment7PracticingReactiveForms": {
+    "Assignment6PracticingTemplateDrivenForms": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/assignment7-practicing-reactive-forms",
+            "outputPath": "dist/assignment6-practicing-template-driven-forms",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Assignment7PracticingReactiveForms:build:production"
+              "browserTarget": "Assignment6PracticingTemplateDrivenForms:build:production"
             },
             "development": {
-              "browserTarget": "Assignment7PracticingReactiveForms:build:development"
+              "browserTarget": "Assignment6PracticingTemplateDrivenForms:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Assignment7PracticingReactiveForms:build"
+            "browserTarget": "Assignment6PracticingTemplateDrivenForms:build"
           }
         },
         "test": {
@@ -102,6 +102,6 @@
     }
   },
   "cli": {
-    "analytics": "4399b93f-5364-49f1-aaeb-4e11c93d1ca0"
+    "analytics": "22858464-5618-403c-8eab-e4755dabc20f"
   }
 }
