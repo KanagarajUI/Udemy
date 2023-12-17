@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Assignment7PracticingReactiveForms": {
+    "Assignment8PracticingPipes": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "sass"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,20 +13,20 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/assignment7-practicing-reactive-forms",
+            "outputPath": "dist/assignment8-practicing-pipes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "sass",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -65,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Assignment7PracticingReactiveForms:build:production"
+              "browserTarget": "Assignment8PracticingPipes:build:production"
             },
             "development": {
-              "browserTarget": "Assignment7PracticingReactiveForms:build:development"
+              "browserTarget": "Assignment8PracticingPipes:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Assignment7PracticingReactiveForms:build"
+            "browserTarget": "Assignment8PracticingPipes:build"
           }
         },
         "test": {
@@ -87,13 +83,13 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "sass",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -102,6 +98,6 @@
     }
   },
   "cli": {
-    "analytics": "4399b93f-5364-49f1-aaeb-4e11c93d1ca0"
+    "analytics": "fc8113e2-008e-49d9-b75a-006e3116168d"
   }
 }
